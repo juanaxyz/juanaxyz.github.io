@@ -82,7 +82,8 @@
     
     width: 100%;
     background-color: #ffa5a5;
-    margin: 100px auto 0;
+    margin: 0 auto ;
+    padding-top: 400px;
     overflow-x: hidden;
     
 }
@@ -91,8 +92,8 @@
     background-image: url(../image/luhdian1.png);
     height: 999px;
     background-repeat: no-repeat;
-    background-position: 50% 600px;
-    border: 2px ;
+    background-position: center;
+    border: 2px 2px 1px black;
 }
 h3{
     text-align: center;
