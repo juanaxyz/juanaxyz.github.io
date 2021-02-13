@@ -1,0 +1,276 @@
+/* animasi */
+
+
+
+
+/* judul teks */
+@import url('https://fonts.googleapis.com/css?family=Roboto:700');
+@keyframes showTopText {
+  0% { transform: translate3d(0, 100%, 0); }
+  40%, 60% { transform: translate3d(0, 50%, 0); }
+  100% { transform: translate3d(0, 0, 0); }
+}
+@keyframes showBottomText {
+  0% { transform: translate3d(0, -100%, 0); }
+  100% { transform: translate3d(0, 0, 0); }
+}
+.animated-title {
+  color: #3d7ea6;
+  font-family: Roboto, Arial, sans-serif;
+  height: 90vmin;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 90vmin;
+}
+.animated-title > div {
+  height: 50%;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+}
+.animated-title > div div {
+  font-size: 12vmin;
+  padding: 2vmin 0;
+  position: absolute;
+}
+.animated-title > div div span {
+  display: block;
+}
+.animated-title > div.text-top {
+  border-bottom: 1vmin solid #000;
+  top: 0;
+}
+.animated-title > div.text-top div {
+  animation: showTopText 1s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+  bottom: 0;
+  transform: translate(0, 100%);
+}
+.animated-title > div.text-top div span:first-child {
+  color: #5c969e;
+}
+.animated-title > div.text-bottom {
+  bottom: 0;
+}
+.animated-title > div.text-bottom div {
+  animation: showBottomText 0.5s;
+  animation-delay: 1.75s;
+  animation-fill-mode: forwards;
+  top: 0;
+  transform: translate(0, -100%);
+}
+/* font */
+@font-face{
+    font-family: spartan;
+    src: url(../font/LeagueSpartan-Bold.otf);
+}
+
+
+
+
+/* style */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main{
+    
+    width: 100%;
+    background-color: #ffa5a5;
+    margin: 0 auto;
+    overflow-x: hidden;
+    
+}
+
+.image1{
+    background-image: url(../image/luhdian1.png);
+    height: 999px;
+    background-repeat: no-repeat;
+    background-position: 50% 600px;
+    border: 2px ;
+}
+h3{
+    text-align: center;
+    color: #fcdada;
+    font-family: spartan, sans-serif;
+    margin-top: 25px;
+    text-shadow: 2px 1px #5c969e;
+    padding-bottom: 80px;
+}
+h4{
+  color: #3d7ea6;
+  text-align: center;
+  font-family: spartan, 'sans-seri';
+  text-shadow: 2px 2px 4px black;
+  font-size: 25px;
+  text-transform: capitalize;
+}
+h2{
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  text-transform: capitalize;
+  text-shadow: 2px 2px 1px #5d9ec9;
+}
+h6{
+  text-align: center;
+  padding-top: 10px;
+  font-size: 20px;
+  text-transform: capitalize;
+}
+.gede{
+  margin-top: 100px;
+  font-size: 50px;
+  color: #f5cece;
+}
+.kecil{
+  color: #d6baba;
+}
+
+.tabel{
+    width: 100%;
+    justify-content: space-between;
+    display: flex; 
+    flex-wrap: wrap;
+}
+.tbl img{
+  height: 200px;
+}
+.tbl{
+  margin: 10px;
+}
+
+.video{
+  width: 100%;
+  justify-content: space-between;
+  display: flex; 
+  flex-wrap: wrap;
+}
+/* kado */
+
+
+
+
+
+/* aos */
+#div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px;
+}
+
+.gif{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-bottom: 50px;
+}
+button{
+  margin-top: 10px;
+  color: lightblue;
+  text-shadow: 1px 1px black;
+  box-shadow: 2px 2px black;
+}
+
+.img1{
+  background-image: url(../image/luh_dian_2_150x.jpg);
+  background-repeat: no-repeat;
+  height: 300px;
+}
+
+.img2{
+  background-image: url(../image/si\ rajin.jpg);
+  background-repeat: no-repeat;
+  height: 150px;
+  background-position-x: right;
+}
+
+
+.img3{
+  background-image: url(../image/luh\ dian\ 4.jpeg);
+  background-repeat: no-repeat;
+  height: 300px;
+  background-position-x: left;
+}
+
+.img4{
+  background-image: url(../image/luh\ dian\ 3.jpg);
+  background-repeat: no-repeat;
+  height: 150px;
+  background-position-x: right;
+}
+.img5{
+  background-image: url(../image/p.jpg);
+  background-repeat: no-repeat;
+  height: 333px;
+  background-position-x: left;
+}
+.img6{
+  background-image: url(../image/o.jpg);
+  background-repeat: no-repeat;
+  height: 112px;
+  background-size: auto 150px;
+  padding-bottom: 300px;
+  background-position-x: right;
+}
+
+
+/* quotes */
+
+blockquote {
+
+  max-width: 500px;
+ 
+  margin: 15px;
+ 
+  width: 90%;
+ 
+  padding: 30px 50px;
+ 
+  background: #fd92ef;
+ 
+     color: #FFFFFF; 
+ 
+  position: relative;
+  font-size: 15px;
+ 
+ }
+ 
+ blockquote::before,
+ 
+ blockquote::after {
+ 
+  font-size: 350%;
+ 
+  font-family: arial;
+ 
+  display:block;
+ 
+  position: absolute;
+ 
+ }
+ 
+ blockquote::before {
+ 
+  content: open-quote;
+ 
+  left: 30px;
+ 
+     line-height: 40px;
+ 
+ }
+ 
+ blockquote::after {
+ 
+  content: close-quote;
+ 
+  right: 30px;
+ 
+     line-height: 30px;
+ 
+ }
