@@ -20,7 +20,7 @@
   height: 90vmin;
   left: 50%;
   position: absolute;
-  top: 50%;
+  top: 200px;
   transform: translate(-50%, -50%);
   width: 90vmin;
 }
@@ -53,7 +53,7 @@
   color: #5c969e;
 }
 .animated-title > div.text-bottom {
-  bottom: 0;
+  bottom: 0px;
 }
 .animated-title > div.text-bottom div {
   animation: showBottomText 0.5s;
